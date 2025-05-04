@@ -1,338 +1,474 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
-
-        <title>Amazon Clone</title>
-    </head>
-    <body>
-        <nav>
-        <a href="/">
-            <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Amazon clone - Shopping website" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amazon Clone - Online Shopping</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Primary Navigation">
+        <a href="/" aria-label="Amazon">
+          <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo" />
         </a>
-        <div class="nav-country">
-
-            <img src="./assets/location_icon.png" height="20" alt="United States Flag">
-            <div>
-                <p>Deliver to</p>
-                <p>Maharashtra</p>
-            </div>
+        <div class="nav-country" tabindex="0">
+          <img src="./assets/location_icon.png" height="20" alt="" />
+          <div>
+            <p>Deliver to</p>
+            <p><strong>Maharashtra</strong></p>
+          </div>
         </div>
-            <div class="nav-search">
-                <div class="nav-search-gategory">
-                    <p>All</p>
-                    <img src="./assets/dropdown_icon.png" height="12" alt="">
-                </div>
-                <input type="text" class="nav-search-input" placeholder="Search Amazon">
-                <img src="./assets/search_icon.png" class="nav-search-icon" alt="Search Icon">
-            </div>
-
-            <div class="nav-language">
-                <img src="./assets/us_flag.png" width="20px" alt="Globe Icon">
-                <p>en-US</p>
-                <img src="./assets/dropdown_icon.png" width="12px" alt="">
-
-            </div>
-
-            <div class="nav-text">
-                <p>Hello, Sign in</p>
-                <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""> </h1>
-
-            </div>
-            <div class="nav-text">
-                <p>Returns</p>
-                <h1>& Orders </h1>
-
-            </div>
-            <a href="./cart.html" class="nav-cart">
-                <img src="./assets/cart_icon.png" width="35px">
-                <h4>Cart</h4>
-            </a>
-
-        </nav>
-
-        
-    <div class="nav-bottom">
-        <div>
-            <img src="./assets/menu_icon.png" width="25px" alt="Menu Icon">
+        <div class="nav-search" role="search">
+          <div
+            class="nav-search-gategory"
+            tabindex="0"
+            role="button"
+            aria-label="Select search category"
+          >
             <p>All</p>
+            <img src="./assets/dropdown_icon.png" height="12" alt="" />
+          </div>
+          <input
+            type="text"
+            class="nav-search-input"
+            placeholder="Search Amazon"
+            aria-label="Search"
+          />
+          <img
+            src="./assets/search_icon.png"
+            class="nav-search-icon"
+            alt=""
+            role="button"
+            aria-label="Search"
+          />
         </div>
-        <p>Today's Deals</p>
-        <p>Customer Service</p>
-        <p>Gift Cards</p>
-        <p>Registry</p>
-        <p>Sell</p>
-    </div>
 
-    <div class="header-slider">
-        <a href="#" class="control-prev">&#129144</a>
-        <a href="#" class="control-next">&#129146</a>
+        <div class="nav-language" tabindex="0">
+          <img src="./assets/us_flag.png" width="20" alt="US Flag" />
+          <p>EN</p>
+          <img src="./assets/dropdown_icon.png" width="12" alt="" />
+        </div>
+
+        <div class="nav-text" tabindex="0">
+          <p>Hello, Sign in</p>
+          <h1>
+            Account & Lists
+            <img src="./assets/dropdown_icon.png" width="8" alt="" />
+          </h1>
+        </div>
+
+        <div class="nav-text" tabindex="0">
+          <p>Returns</p>
+          <h1>& Orders</h1>
+        </div>
+
+        <a href="./cart.html" class="nav-cart" aria-label="Shopping Cart">
+          <span class="cart-count">0</span>
+          <img src="./assets/cart_icon.png" width="35" alt="" />
+          <h4>Cart</h4>
+        </a>
+      </nav>
+
+      <div class="nav-bottom">
+        <div tabindex="0">
+          <img src="./assets/menu_icon.png" width="25" alt="" />
+          <p>All</p>
+        </div>
+        <p tabindex="0">Today's Deals</p>
+        <p tabindex="0">Customer Service</p>
+        <p tabindex="0">Gift Cards</p>
+        <p tabindex="0">Registry</p>
+        <p tabindex="0">Sell</p>
+        <p tabindex="0">Prime</p>
+        <p tabindex="0">New Releases</p>
+        <p tabindex="0">Books</p>
+        <p tabindex="0">Fashion</p>
+        <p tabindex="0">Electronics</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="header-slider" aria-label="Featured promotions carousel">
+        <a href="#" class="control-prev" aria-label="Previous slide"
+          >&#129144;</a
+        >
+        <a href="#" class="control-next" aria-label="Next slide">&#129146;</a>
         <ul>
-            <img src="./assets/header1.jpg" class="header-img" alt="">
-            <img src="./assets/header2.jpg"class="header-img" alt="">
-            <img src="./assets/header3.jpg"class="header-img" alt="">
-            <img src="./assets/header4.jpg" class="header-img"alt="">
-            <img src="./assets/header5.jpg" class="header-img"alt="">
-            <img src="./assets/header6.jpg" class="header-img"alt="">
-
+          <img
+            src="./assets/header1.jpg"
+            class="header-img"
+            alt="Featured promotion 1"
+          />
+          <img
+            src="./assets/header2.jpg"
+            class="header-img"
+            alt="Featured promotion 2"
+          />
+          <img
+            src="./assets/header3.jpg"
+            class="header-img"
+            alt="Featured promotion 3"
+          />
+          <img
+            src="./assets/header4.jpg"
+            class="header-img"
+            alt="Featured promotion 4"
+          />
+          <img
+            src="./assets/header5.jpg"
+            class="header-img"
+            alt="Featured promotion 5"
+          />
+          <img
+            src="./assets/header6.jpg"
+            class="header-img"
+            alt="Featured promotion 6"
+          />
         </ul>
-    </div>
+      </div>
 
-    <div class="box-row header-box">
+      <div class="box-row header-box">
         <div class="box-col">
-            <h3>Free international returns</h3>
-            <img src="./assets/box1-1.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Free international returns</h3>
+          <img src="./assets/box1-1.jpg" alt="International shipping item" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Lunar new Year</h3>
-            <img src="./assets/box1-2.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Lunar New Year</h3>
+          <img src="./assets/box1-2.jpg" alt="Lunar new year items" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Toy under $25</h3>
-            <img src="./assets/box1-3.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Toys under $25</h3>
+          <img src="./assets/box1-3.jpg" alt="Affordable toys" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3> Gifts under $25</h3>
-            <img src="./assets/box1-4.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Gifts under $25</h3>
+          <img src="./assets/box1-4.jpg" alt="Affordable gifts" />
+          <a href="#">Shop more</a>
         </div>
-    <div class="box-row ">
+      </div>
+
+      <div class="box-row">
         <div class="box-col">
-            <h3>Grooming Products</h3>
-            <img src="./assets/box2-1.jpg" alt="">
-            <a href="#">Shop more</a>
-        </div>
-        <div class="box-col">
-            <h3>Latest Devices</h3>
-            <img src="./assets/box2-2.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Grooming Products</h3>
+          <img src="./assets/box2-1.jpg" alt="Grooming products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Pets Food </h3>
-            <img src="./assets/box2-3.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Latest Devices</h3>
+          <img src="./assets/box2-2.jpg" alt="Electronic devices" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Fashion Mart</h3>
-            <img src="./assets/box2-4.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Pets Food</h3>
+          <img src="./assets/box2-3.jpg" alt="Pet food products" />
+          <a href="#">Shop more</a>
         </div>
-    </div>
-    <div class="products-slider">
-        <h2>Best Sellers in Sports & Outdoors</h2>
+        <div class="box-col">
+          <h3>Fashion Mart</h3>
+          <img src="./assets/box2-4.jpg" alt="Fashion items" />
+          <a href="#">Shop more</a>
+        </div>
+      </div>
+
+      <section class="products-slider" aria-labelledby="sports-title">
+        <h2 id="sports-title">Best Sellers in Sports & Outdoors</h2>
         <div class="products">
-            <img src="./assets/product1-1.jpg" alt="">
-            <img src="./assets/product1-2.jpg" alt="">
-            <img src="./assets/product1-3.jpg" alt="">
-            <img src="./assets/product1-4.jpg" alt="">
-            <img src="./assets/product1-5.jpg" alt="">
-            <img src="./assets/product1-6.jpg" alt="">
-            <img src="./assets/product1-7.jpg" alt="">
-            <img src="./assets/product1-8.jpg" alt="">
-            <img src="./assets/product1-9.jpg" alt="">
-            <img src="./assets/product1-10.jpg" alt="">
+          <img src="./assets/product1-1.jpg" alt="Sports product 1" />
+          <img src="./assets/product1-2.jpg" alt="Sports product 2" />
+          <img src="./assets/product1-3.jpg" alt="Sports product 3" />
+          <img src="./assets/product1-4.jpg" alt="Sports product 4" />
+          <img src="./assets/product1-5.jpg" alt="Sports product 5" />
+          <img src="./assets/product1-6.jpg" alt="Sports product 6" />
+          <img src="./assets/product1-7.jpg" alt="Sports product 7" />
+          <img src="./assets/product1-8.jpg" alt="Sports product 8" />
+          <img src="./assets/product1-9.jpg" alt="Sports product 9" />
+          <img src="./assets/product1-10.jpg" alt="Sports product 10" />
         </div>
-    </div>
-    <div class="box-row ">
+      </section>
+
+      <div class="box-row">
         <div class="box-col">
-            <h3>Stationery</h3>
-            <img src="./assets/box3-1.jpg" alt="">
-            <a href="#">Shop more</a>
-        </div>
-        <div class="box-col">
-            <h3>Laptops for study</h3>
-            <img src="./assets/box3-2.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Stationery</h3>
+          <img src="./assets/box3-1.jpg" alt="Stationery products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Office chairs </h3>
-            <img src="./assets/box3-3.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Laptops for Study</h3>
+          <img src="./assets/box3-2.jpg" alt="Laptop products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3> Aming Monitor</h3>
-            <img src="./assets/box3-4.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Office Chairs</h3>
+          <img src="./assets/box3-3.jpg" alt="Office chair products" />
+          <a href="#">Shop more</a>
         </div>
-    </div>
-    <div class="products-slider-with-price">
-        <h2>Deals Under $25</h2>
+        <div class="box-col">
+          <h3>Gaming Monitors</h3>
+          <img src="./assets/box3-4.jpg" alt="Monitor products" />
+          <a href="#">Shop more</a>
+        </div>
+      </div>
+
+      <section class="products-slider-with-price" aria-labelledby="deals-title">
+        <h2 id="deals-title">Deals Under $25</h2>
         <div class="products">
-        <div class="product-card">
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-1.jpg" alt="">
+              <img src="./assets/product2-1.jpg" alt="Deal product 1" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>25% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>14.49</span> <span>List Price: $19.99</span>
+            </p>
+            <h4>Wireless Earbuds Bluetooth Headphones</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-2.jpg" alt="">
+              <img src="./assets/product2-2.jpg" alt="Deal product 2" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>30% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>17.99</span> <span>List Price: $25.99</span>
+            </p>
+            <h4>Portable Bluetooth Speaker Waterproof</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-3.jpg" alt="">
+              <img src="./assets/product2-3.jpg" alt="Deal product 3" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>15% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>21.49</span> <span>List Price: $24.99</span>
+            </p>
+            <h4>Wireless Phone Charger Fast Charging</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-4.jpg" alt="">
+              <img src="./assets/product2-4.jpg" alt="Deal product 4" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>40% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>11.99</span> <span>List Price: $19.99</span>
+            </p>
+            <h4>USB C Cable 3-Pack 6ft Fast Charging</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-5.jpg" alt="">
+              <img src="./assets/product2-5.jpg" alt="Deal product 5" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>25% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>14.49</span> <span>List Price: $19.99</span>
+            </p>
+            <h4>Reusable Water Bottle 32oz BPA Free</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-6.jpg" alt="">
+              <img src="./assets/product2-6.jpg" alt="Deal product 6" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>20% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>19.99</span> <span>List Price: $24.99</span>
+            </p>
+            <h4>Smartphone Ring Stand Holder 2-Pack</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-7.jpg" alt="">
+              <img src="./assets/product2-7.jpg" alt="Deal product 7" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>35% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>12.99</span> <span>List Price: $19.99</span>
+            </p>
+            <h4>Microfiber Cleaning Cloth Pack of 12</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-8.jpg" alt="">
+              <img src="./assets/product2-8.jpg" alt="Deal product 8" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>25% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>17.99</span> <span>List Price: $23.99</span>
+            </p>
+            <h4>LED Desk Lamp with USB Charging Port</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-9.jpg" alt="">
+              <img src="./assets/product2-9.jpg" alt="Deal product 9" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>50% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>9.99</span> <span>List Price: $19.99</span>
+            </p>
+            <h4>Wireless Mouse Ergonomic Design</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-10.jpg" alt="">
+              <img src="./assets/product2-10.jpg" alt="Deal product 10" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>25% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
-        </div>
-        <div class="product-card">
+            <p class="product-price">
+              $<span>22.49</span> <span>List Price: $29.99</span>
+            </p>
+            <h4>Portable Phone Charger Power Bank 10000mAh</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
             <div class="product-img-container">
-                <img src="./assets/product2-11.jpg" alt="">
+              <img src="./assets/product2-11.jpg" alt="Deal product 11" />
             </div>
             <div class="product-offer">
-                <p>25% OFF</p> <span>Deal</span>
+              <p>15% OFF</p>
+              <span>Deal</span>
             </div>
-            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
-            <h4>This product is the best for you </h4>
-
+            <p class="product-price">
+              $<span>21.25</span> <span>List Price: $24.99</span>
+            </p>
+            <h4>Bluetooth Fitness Tracker Waterproof</h4>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
-    
-    
-    <div class="products-slider">
-        <h2>Best Sellers in Sports & Outdoors</h2>
+      </section>
+
+      <section class="products-slider" aria-labelledby="electronics-title">
+        <h2 id="electronics-title">Popular in Electronics</h2>
         <div class="products">
-            <img src="./assets/product1-1.jpg" alt="">
-            <img src="./assets/product1-2.jpg" alt="">
-            <img src="./assets/product1-3.jpg" alt="">
-            <img src="./assets/product1-4.jpg" alt="">
-            <img src="./assets/product1-5.jpg" alt="">
-            <img src="./assets/product1-6.jpg" alt="">
-            <img src="./assets/product1-7.jpg" alt="">
-            <img src="./assets/product1-8.jpg" alt="">
-            <img src="./assets/product1-9.jpg" alt="">
-            <img src="./assets/product1-10.jpg" alt="">
+          <img src="./assets/product1-1.jpg" alt="Electronics product 1" />
+          <img src="./assets/product1-2.jpg" alt="Electronics product 2" />
+          <img src="./assets/product1-3.jpg" alt="Electronics product 3" />
+          <img src="./assets/product1-4.jpg" alt="Electronics product 4" />
+          <img src="./assets/product1-5.jpg" alt="Electronics product 5" />
+          <img src="./assets/product1-6.jpg" alt="Electronics product 6" />
+          <img src="./assets/product1-7.jpg" alt="Electronics product 7" />
+          <img src="./assets/product1-8.jpg" alt="Electronics product 8" />
+          <img src="./assets/product1-9.jpg" alt="Electronics product 9" />
+          <img src="./assets/product1-10.jpg" alt="Electronics product 10" />
         </div>
-    </div>
+      </section>
 
-    <div class="box-row ">
+      <div class="box-row">
         <div class="box-col">
-            <h3>Stationery</h3>
-            <img src="./assets/box3-1.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Kitchen Appliances</h3>
+          <img src="./assets/box3-1.jpg" alt="Kitchen appliance products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Laptops for study</h3>
-            <img src="./assets/box3-2.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Smart Home Devices</h3>
+          <img src="./assets/box3-2.jpg" alt="Smart home products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3>Office chairs </h3>
-            <img src="./assets/box3-3.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Furniture</h3>
+          <img src="./assets/box3-3.jpg" alt="Furniture products" />
+          <a href="#">Shop more</a>
         </div>
         <div class="box-col">
-            <h3> Aiming Monitor</h3>
-            <img src="./assets/box3-4.jpg" alt="">
-            <a href="#">Shop more</a>
+          <h3>Outdoor Equipment</h3>
+          <img src="./assets/box3-4.jpg" alt="Outdoor equipment products" />
+          <a href="#">Shop more</a>
         </div>
-    </div>
+      </div>
+    </main>
 
-<footer>
-    <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo">
-    <p>© 1996-2022, Amazon.com, Inc. or its affiliates & <br>Created by<br> <span>SG</span></p>
-</footer>
-        <script src="script.js"></script>
-    </body>
+    <div class="back-to-top">Back to top</div>
+
+    <footer>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Get to Know Us</h3>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Amazon</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Amazon Devices</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Make Money with Us</h3>
+          <ul>
+            <li><a href="#">Sell products on Amazon</a></li>
+            <li><a href="#">Sell on Amazon Business</a></li>
+            <li><a href="#">Sell apps on Amazon</a></li>
+            <li><a href="#">Become an Affiliate</a></li>
+            <li><a href="#">Advertise Your Products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Amazon Payment Products</h3>
+          <ul>
+            <li><a href="#">Amazon Business Card</a></li>
+            <li><a href="#">Shop with Points</a></li>
+            <li><a href="#">Reload Your Balance</a></li>
+            <li><a href="#">Amazon Currency Converter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Let Us Help You</h3>
+          <ul>
+            <li><a href="#">Amazon and COVID-19</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Shipping Rates & Policies</a></li>
+            <li><a href="#">Returns & Replacements</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img src="./assets/amazon_logo.png" width="100" alt="Amazon Logo" />
+        <p>
+          © 1996-2025, Amazon.com, Inc. or its affiliates &amp; <br />Created
+          by<br />
+          <span>SG</span>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
